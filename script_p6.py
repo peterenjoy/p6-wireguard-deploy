@@ -5,14 +5,23 @@
 
 # importe le csv des noms, prenom et email
 import pandas as pan
-db = pan.read_csv("/Users/pierrehellequin/p6/p6.csv")
+import fileinput
+
+db = pan.read_csv("/Users/pierrehellequin/p6-wg/final")
+
+#input file
+for index, line
+user = open("/Users/pierrehellequin/p6/user.conf", "rt")
+fout = open("out.txt", "wt")
+
+
 
 
 # variable dataset employ
 
 # vérifie si csv complet? 
 
-/pi# compte le nom de ligne
+# compte le nom de ligne
 
 # create 
 
