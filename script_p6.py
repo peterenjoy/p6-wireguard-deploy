@@ -4,31 +4,29 @@
 
 
 # importe le csv des noms, prenom et email
-import pandas as pan
+import pandas as pd
 import fileinput
+import os
+import sys
+from string import Template
 
-db = pan.read_csv("/Users/pierrehellequin/p6-wg/final")
+path=os.getcwd()
+db = pd.read_csv(path+'/final')
+print(db)
 
-#input file
-for index, line
-user = open("/Users/pierrehellequin/p6/user.conf", "rt")
-fout = open("out.txt", "wt")
+# ci dessous à utiliser dans le loop
+for i in range(len(db)):
+    with open(path+'/user.conf', 'r') as f:
+        NOM = db.loc[i, "NOM"]
+        PRENOM = db.loc[i, "PRENOM"]
+        FILENAME = f'{PRENOM}_{NOM}.conf'
+        IP = db.loc[i, "ID"]
+        PK = db.loc[i, "PRIVKEY"]
+        PUB = db.loc[i, "PUBKEY"]
+        t = Template(f.read())
+        open(FILENAME, 'w').write(t.substitute(IP=IP, PK=PK))
+        open(path+'/server.conf', 'a+').write(f'[Peer]\n# {FILENAME}\nPublicKey = {PUB}\nAllowedIPs = 10.0.0.{IP}/32\n') 
 
 
 
 
-# variable dataset employ
-
-# vérifie si csv complet? 
-
-# compte le nom de ligne
-
-# create 
-
-# Hello World First 
-a = 15
-print ("Hello World!" , a );
-
-# Importer le csv test
-
-# Ajouter un id 
