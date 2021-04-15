@@ -18,8 +18,21 @@ Pour faire tourner ce script, il faut tout d'abord avoir installé Wireguard et 
 * Sur MacOS : `brew install wireguard-tools python3`
 * Sur Linux : `apt-get install wireguard python3`
 
+
+## Prérequis
+Il vous faut au préalable avoir préparé un fichier au format CSV avec comme délimiteur ",". Ce fichier contiendra la liste de vos clients avec 3 informations (colonnes) à la sujet : PRENOM,NOM,EMAIL. <u>Il ne faut pas<u> rajouter ces infos. Listez simplement vos clients.
+  
+  
 ## Utilisation
-1. sdgf
+1. Avec votre terminal ou shell, se placer dans le répertoire où vous avez téléchargé le programme
+2. lancer le programme via la commande ```bash python3 script_p6.py```
+3. Votre terminal vous demande de sélectionner un fichier
+4. Le programme vous demande si vous voulez ajouter d'autres clients à une configuration précédente. répondez "oui" ou "non".
+5. Si oui, tapez oui puis "entrer" puis indiquez les dernièrs chiffres de l'addresse IP de votre dernier client dans votre fichier server.conf (ex : 10.0.0.42, tapez 42)
+6. Si non, tapez non
+7. et voilà ! Vos fichiers de configuration sont prêt
+8. Les fichiers de configuration à envoyer à vos clients sont dans le dossier _"files"_
+9. Le fichier de configuration pour votre serveur Wireguard se trouve dans votre dossier courant! **Bonne utilisation!**
 
 
 Contributing
