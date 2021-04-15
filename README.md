@@ -22,7 +22,9 @@ Pour faire tourner ce script, il faut tout d'abord avoir installé Wireguard et 
 
 ## Prérequis
 Il vous faut au préalable avoir préparé un fichier au format CSV avec comme délimiteur ",". Ce fichier contiendra la liste de vos clients avec 3 informations (colonnes) à la sujet : PRENOM,NOM,EMAIL. <u>Il ne faut pas<u> rajouter ces infos. Listez simplement vos clients.
-  
+
+PS: Pour ajouter des utilisateurs, refaites un fichier avec les nouveaux utilisateurs **uniquement**
+
 ## Utilisation
 1. Avec votre terminal ou shell, se placer dans le répertoire où vous avez téléchargé le programme
 2. lancer le programme via la commande ```bash python3 script_p6.py```
@@ -38,15 +40,3 @@ Il vous faut au préalable avoir préparé un fichier au format CSV avec comme d
 
 [MIT](https://github.com/peterenjoy/p6-wireguard-deploy/blob/701bd02b6ad1e0070a3b6aac8dd17860ecfea7b9/LICENSE)
 > C'est tout à vous!
-> 
-
-
-
-
-
-
-
-
-
-
-_`Pierre Hellequin - Avril 2021 - Dans le cadre de ma formation Openclassroom`_
