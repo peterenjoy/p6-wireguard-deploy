@@ -18,7 +18,10 @@ Pour aller plus vite! En effet, si vous avez à déployer sur des dizaines voire
 ## Installation
 Pour faire tourner ce script, il faut tout d'abord avoir installé Wireguard et Python3 sur votre ordinateur
 * Sur MacOS : `brew install wireguard-tools python3`
-* Sur Linux : `apt-get install wireguard python3`
+
+* Sur Linux : 
+`apt-get install wireguard python3 python3-pip python3-tk`
+`python3 -m pip install pandas`
 
 ## Prérequis
 Il vous faut au préalable avoir préparé un fichier au format CSV avec comme délimiteur ",". Ce fichier contiendra la liste de vos clients avec 3 informations (colonnes) à la sujet : PRENOM,NOM,EMAIL. <u>Il ne faut pas<u> rajouter ces infos. Listez simplement vos clients.
