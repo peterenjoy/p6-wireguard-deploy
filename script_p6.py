@@ -39,7 +39,7 @@ open('file','w').write(d)
 #---------------------------------------------------------------------------#
 # Créé le fichier pubkey/privkey venant de bash (commande 'wg' il faut installer wireguard) 
 #---------------------------------------------------------------------------#
-EP=input("Quel est l'adresse IP public de votre serveur VPN? ")
+EP=input("Quel est l'adresse IP public de votre serveur VPN? (EndPoint) : ")
 if input("Souhaitez-vous ajouter d'autres clients? (oui/non): ")=="oui":
     k=int(input("quel est le dernier numéro de la dernière addresse IP 10.0.0.X dans votre fichier server.conf? :"))
     k+=1
