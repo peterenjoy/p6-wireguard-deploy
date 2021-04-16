@@ -39,6 +39,7 @@ open('file','w').write(d)
 #---------------------------------------------------------------------------#
 # Créé le fichier pubkey/privkey venant de bash (commande 'wg' il faut installer wireguard) 
 #---------------------------------------------------------------------------#
+EP=input("Quel est l'adresse IP public de votre serveur VPN? ")
 if input("Souhaitez-vous ajouter d'autres clients? (oui/non): ")=="oui":
     k=int(input("quel est le dernier numéro de la dernière addresse IP 10.0.0.X dans votre fichier server.conf? :"))
     k+=1
@@ -104,7 +105,7 @@ for i in range(len(db)):
         PK = db.loc[i, "PRIVKEY"]
         PUB = db.loc[i, "PUBKEY"]
         t = Template(f.read())
-        open(files+'/'+FILENAME, 'w').write(t.substitute(IP=IP, PK=PK))
+        open(files+'/'+FILENAME, 'w').write(t.substitute(IP=IP, PK=PK, EP=EP))
         open(path+'/server.conf', 'a+').write(f'[Peer]\n# {FILENAME}\nPublicKey = {PUB}\nAllowedIPs = 10.0.0.{IP}/32\n') 
 
 print("\n-----------------\nTOUT EST PRET !\n-----------------\n")
