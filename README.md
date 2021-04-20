@@ -1,9 +1,4 @@
-# p6-wireguard-deploy
-
-> Pourquoi ce nom étrange?
-> * _P6_ : pour le numéro de mon projet 
-> * _Wireguard_ : le nom du logiciel qui soutend mon script 
-> * _Deploy_ : comme déploiement (...en grand nombre)
+# Generateur de fichier de configuration Wireguard
 
 ## Genèse
 Dans le cadre de mon projet 6 OpenClassroom, nous avions pour mission d'identifier une tache répétitive et chronophage (et sujette à erreur...).
