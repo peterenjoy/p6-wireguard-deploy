@@ -7,7 +7,7 @@ import os
 import sys
 import subprocess
 from string import Template
-from tkinter import Tk
+from tkinter import Tk #parfois mettre 'tk' plutot que 'Tk'
 from tkinter.filedialog import askopenfilename
 path=os.getcwd()
 
