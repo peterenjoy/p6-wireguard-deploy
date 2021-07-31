@@ -14,20 +14,22 @@ Pour aller plus vite! En effet, si vous avez à déployer sur des dizaines voire
 Pour faire tourner ce script, il faut tout d'abord avoir installé Wireguard et Python3 sur votre ordinateur
 * Sur MacOS : 
 * `brew install wireguard-tools python3`
-* `pip install pandas`
+* `pip3 install pandas`
+* et parfois `brew install python-tk`
+
 
 * Sur Linux : 
 * `apt-get install wireguard python3 python3-pip python3-tk`
 * `python3 -m pip install pandas`
 
 ## Prérequis
-Il vous faut au préalable avoir préparé un fichier au format CSV avec comme délimiteur ",". Ce fichier contiendra la liste de vos clients avec 3 informations (colonnes) à la sujet : PRENOM,NOM,EMAIL. <u>Il ne faut pas<u> rajouter ces infos. Listez simplement vos clients.
+Il vous faut au préalable avoir préparé un fichier au format CSV avec comme délimiteur "," (virgule). Ce fichier contiendra la liste de vos clients avec 3 informations (3 colonnes) : PRENOM,NOM,EMAIL. <u>Il ne faut pas<u> rajouter ces en-têtes. Listez simplement vos clients.
 
 PS: Pour ajouter des utilisateurs, refaites un fichier avec les nouveaux utilisateurs **uniquement**
 
 ## Utilisation
 1. Avec votre terminal ou shell, se placer dans le répertoire où vous avez téléchargé le programme
-2. lancer le programme via la commande ```bash python3 script_p6.py```
+2. lancer le programme via la commande ```bash python3 script_p6.py``` ou ```python3 script_p6.py```
 3. Votre terminal vous demande de sélectionner un fichier
 4. Le programme vous demande si vous voulez ajouter d'autres clients à une configuration précédente. répondez "oui" ou "non".
 5. Si oui, tapez oui puis "entrer" puis indiquez les dernièrs chiffres de l'addresse IP de votre dernier client dans votre fichier server.conf (ex : 10.0.0.42, tapez 42)
